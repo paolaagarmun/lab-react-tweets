@@ -1,6 +1,8 @@
-function Message({mesg}) {
+function Message(props) {
     return(
-    <p className="message">{mesg}</p>
+    <p className="message">
+        {props.mesg}
+        </p>
     )
 }
 

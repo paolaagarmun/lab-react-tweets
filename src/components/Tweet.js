@@ -4,21 +4,21 @@ import Timestamp from "./Timestamp";
 import Message from "./Message";
 import Actions from "./Actions";
 
-function Tweet(objTweet) {
-console.log("Here", objTweet);
+function Tweet(props) {
+console.log("Here", props);
 
   return (
     <div className="tweet">
-      <ProfileImage image={objTweet.tweet.user.image}/>
+      <ProfileImage image={props.tweet.user.image}/>
 
       <div className="body">
         <div className="top">
-          <User userData = {objTweet.tweet.user} />
-          <Timestamp time = {objTweet.tweet.timestamp} />
+          <User userData = {props.tweet.user} />
+          <Timestamp time = {props.tweet.timestamp} />
           
         </div>
 
-        <Message mesg = {objTweet.tweet.message}/>
+        <Message mesg = {props.tweet.message}/>
 
         <Actions />
       </div>
