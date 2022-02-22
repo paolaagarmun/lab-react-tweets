@@ -5,7 +5,7 @@ import Message from "./Message";
 import Actions from "./Actions";
 
 function Tweet(props) {
-console.log("Here", props);
+//console.log("Here", props);
 
   return (
     <div className="tweet">
