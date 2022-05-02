@@ -1,5 +1,5 @@
 function Message(props) {
-  return <p className="message">{props.mesg}</p>;
+  return <p className="message">{props.msg}</p>;
 }
 
 export default Message;
