@@ -5,20 +5,19 @@ import Message from "./Message";
 import Actions from "./Actions";
 
 function Tweet(props) {
-//console.log("Here", props);
+  //console.log("Here", props);
 
   return (
     <div className="tweet">
-      <ProfileImage image={props.tweet.user.image}/>
+      <ProfileImage image={props.tweet.user.image} />
 
       <div className="body">
         <div className="top">
-          <User userData = {props.tweet.user} />
-          <Timestamp time = {props.tweet.timestamp} />
-          
+          <User userData={props.tweet.user} />
+          <Timestamp time={props.tweet.timestamp} />
         </div>
 
-        <Message mesg = {props.tweet.message}/>
+        <Message mesg={props.tweet.message} />
 
         <Actions />
       </div>
